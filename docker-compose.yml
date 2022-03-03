@@ -4,8 +4,14 @@ services:
 
   cfw2:
     build: ./
+    networks:
+      - captain-overlay-network
     container_name: cfw2
     ports:
       - "8789:8789"
     restart: unless-stopped
+
+networks:
+  captain-overlay-network:
+    external: true
 

@@ -58,14 +58,14 @@ async function fetchHandler(e) {
   const urlObj = new URL(urlStr);
   const path = urlObj.href.substr(urlObj.origin.length);
 
-  if (urlObj.protocol === "http:") {
-    urlObj.protocol = "https:";
-    return makeRes("", 301, {
-      "strict-transport-security":
-        "max-age=99999999; includeSubDomains; preload",
-      location: urlObj.href,
-    });
-  }
+  // if (urlObj.protocol === "http:") {
+  //   urlObj.protocol = "https:";
+  //   return makeRes("", 301, {
+  //     "strict-transport-security":
+  //       "max-age=99999999; includeSubDomains; preload",
+  //     location: urlObj.href,
+  //   });
+  // }
 
   if (path.startsWith("/http/")) {
     return httpHandler(req, path.substr(6));

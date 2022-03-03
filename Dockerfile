@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY index.js ./
 
-RUN npm install -g miniflare --registry=https://registry.npmmirror.com
+RUN npm install -g miniflare
 
 EXPOSE 8787
 

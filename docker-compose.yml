@@ -4,10 +4,14 @@ services:
 
   cfl1:
     build: ./
-    # networks:
-      # - captain-overlay-network
+    networks:
+      - captain-overlay-network
     container_name: cfl1
     ports:
       - "8787:8787"
     restart: unless-stopped
+
+networks:
+  captain-overlay-network:
+    external: true
 

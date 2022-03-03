@@ -6,6 +6,6 @@ services:
     build: ./
     container_name: cfl2
     ports:
-      - "8787:8787"
+      - "8789:8787"
     restart: unless-stopped
 

@@ -8,4 +8,4 @@ RUN npm install -g miniflare --registry=https://registry.npmmirror.com
 
 EXPOSE 8789
 
-CMD [ "miniflare", "index.js", "-p", "8989" ]
+CMD [ "miniflare", "index.js", "-p", "8789" ]

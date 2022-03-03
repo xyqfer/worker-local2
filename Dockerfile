@@ -6,6 +6,6 @@ COPY index.js ./
 
 RUN npm install -g miniflare --registry=https://registry.npmmirror.com
 
-EXPOSE 9876
+EXPOSE 8787
 
-CMD [ "miniflare", "index.js", "-p", "9876" ]
+CMD [ "miniflare", "index.js" ]

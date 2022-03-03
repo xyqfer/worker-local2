@@ -2,11 +2,11 @@ version: "3"
 
 services:
 
-  cfl1:
+  cfl2:
     build: ./
     networks:
       - captain-overlay-network
-    container_name: cfl1
+    container_name: cfl2
     ports:
       - "8787:8787"
     restart: unless-stopped
